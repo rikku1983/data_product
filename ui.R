@@ -10,6 +10,13 @@ shinyUI(pageWithSidebar(
     #submitButton(text="Submit")
   ),
   mainPanel(
+    h2("Do you want to know if the dealer's spec reliable? Or you just want to check how efficient your car is using gas
+       ?, This application is for your to find out!!"),
+    p("This very simple application use a algorithm derived from 'mtcars' datasets from r, which involves 32 different
+       cars' data including 'r names(mtcars)' using regression model. Final model including 3 parameters to predict the 
+      miles per gallon(mpg), which are car weight, 1/4 mile time, and transmission type. So your input should cover all three
+       parameters best apply to your car in question"),
+    p("---------------------------------------------------------------------------------------------------"),
     h2("You car has expected gas efficiency:"),
     verbatimTextOutput("mpg")
   )
